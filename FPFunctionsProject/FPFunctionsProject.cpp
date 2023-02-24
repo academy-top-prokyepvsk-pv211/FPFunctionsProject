@@ -4,6 +4,81 @@ using namespace std;
 
 int global;
 
+// прототипы
+int Counter();
+void Func();
+void PrintStars(int length = 20);
+
+
+// сигнатуры
+// int (int, int)
+int Sum(int a, int b)
+{
+    return a + b;
+}
+
+// int (int, int, int)
+int SumThree(int a, int b, int c)
+{
+    return a + b + c;
+}
+
+// int (int, int)
+int Mult(int a, int b)
+{
+    return a * b;
+}
+
+int main()
+{
+    cout << Counter() << "\n"; // 1
+    cout << Counter() << "\n"; // 2
+
+    Func();
+
+    cout << Counter() << "\n"; // 4
+    cout << Counter() << "\n"; // 5
+    cout << Counter() << "\n"; // 6
+
+    
+
+    /*
+    lengthCharLine - кэмэл нотация
+    PrintCharLine  - паскаль нотация
+
+    length_char_line - "php" нотация ?
+    print_char_line()
+    */
+
+    int lengthLine{ 20 };
+
+    PrintStars();
+
+    //cout << "Welcome!\n";
+
+    //PrintStars(50);
+    //PrintStars();
+    //PrintStars(70);
+
+    //PrintCharLine(30, '+');
+
+    //int n;
+    ////n = Hundred();
+    //int a{ 40 };
+    //int b{ 50 };
+
+    //n = Amount(a, b) + Hundred() + Amount(30, 60);
+
+    //cout << "n = " << n << "\n";
+
+    //int var = 200;
+    //cout << "var = " << var << "\n";
+    //InitHundred(var);
+    //cout << "var = " << var << "\n";
+
+    //cout << Fib(10);
+}
+
 int Hundred()
 {
     return 100;
@@ -23,7 +98,7 @@ void PrintStars10()
     cout << "\n";
 }
 
-void PrintStars(int length = 20)
+void PrintStars(int length)
 {
     for (int i = 0; i < length; i++)
         cout << "*";
@@ -64,59 +139,4 @@ int Counter()
 void Func()
 {
     cout << Counter() << "\n"; // 3
-}
-
-int main()
-{
-    cout << Counter() << "\n"; // 1
-    cout << Counter() << "\n"; // 2
-
-    Func();
-
-    cout << Counter() << "\n"; // 4
-    cout << Counter() << "\n"; // 5
-    cout << Counter() << "\n"; // 6
-
-    
-
-    /*
-    lengthCharLine - кэмэл нотация
-    PrintCharLine  - паскаль нотация
-
-    length_char_line - "php" нотация ?
-    print_char_line()
-    */
-
-    //int lengthLine{ 20 };
-
-    //PrintStars(lengthLine);
-
-    //cout << "Welcome!\n";
-
-    //PrintStars(50);
-    //PrintStars();
-    //PrintStars(70);
-
-    //PrintCharLine(30, '+');
-
-    //int n;
-    ////n = Hundred();
-    //int a{ 40 };
-    //int b{ 50 };
-
-    //n = Amount(a, b) + Hundred() + Amount(30, 60);
-
-    //cout << "n = " << n << "\n";
-
-    //int var = 200;
-    //cout << "var = " << var << "\n";
-    //InitHundred(var);
-    //cout << "var = " << var << "\n";
-
-    //cout << Fib(10);
-
-    
-
-
-
 }
