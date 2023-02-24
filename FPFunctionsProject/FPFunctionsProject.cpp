@@ -15,6 +15,7 @@ void PrintStars(int length = 20);
 int Sum(int a, int b)
 {
     return a + b;
+    cout << "Hello world!\n";
 }
 
 // int (int, int, int)
